@@ -1,0 +1,16 @@
+<div class="container">
+<div class="">
+    <input type="text" value="value">
+    <button (click)="setData(value)">add task</button>
+</div>
+ <div class="row Columns-list">
+    <div class="firslist col-3 list" *ngFor="let list of firsList">{{list}}</div>
+    <div class="sec-list col-3 list"></div>
+    <div class="last-list col-3 list"></div>
+ </div>
+ <div class="homepage"> 
+
+    <a class="btn"  routerLink="/">home page</a>
+ </div>
+
+</div>

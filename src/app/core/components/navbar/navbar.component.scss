@@ -1,0 +1,17 @@
+.container{
+   
+    width: 100%;
+}
+.nav-bar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.nav-title{
+    font-size: 20px;
+    padding: 10px;
+}
+.nav-link{
+     font-size: 14px;
+    padding: 10px;
+}
