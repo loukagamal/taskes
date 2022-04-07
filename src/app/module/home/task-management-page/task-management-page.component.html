@@ -1,16 +1,100 @@
 <div class="container">
-<div class="">
-    <input type="text" value="value">
-    <button (click)="setData(value)">add task</button>
+<div class="addtext" >
+   
+
+<textarea id="tellus" cols="30" rows="5"  #myText  name="myText"  > Text Task description ...</textarea>
+<button (click)="setData(myText.value)">add task</button>
+
+
+
+     
+</div>
+<div class="row Columns-list">
+   <div class="PRoGRESS col-3  card">
+      IN PRoGRESS
+   </div>
+   <div class="REVIEW col-3 card ">
+      REVIEW
+   </div>
+   <div class="COLSED col-3 card">
+      COLSED
+   </div>
 </div>
  <div class="row Columns-list">
-    <div class="firslist col-3 list" *ngFor="let list of firsList">{{list}}</div>
-    <div class="sec-list col-3 list"></div>
-    <div class="last-list col-3 list"></div>
- </div>
- <div class="homepage"> 
+    <div class="firs list col-3  overflow-auto">
+      <div class="row newtask" *ngFor="let list of firsList; let i=index">
+<div class="col-12">
+   {{list}}
+</div>
+<div class="row footer-card"> 
+   <div class="col-5 d-grid">
+      <button class="btn" (click)="removedate(firsList,i)">
+         <i class="fa fa-trash-o" aria-hidden="true"></i>
+      </button>
+   </div>
+   <div class="col-2"></div>
+   <div class="col-5 d-grid">
+      <button  class="btn" (click)="nextdata(list,i)">
+         <i class="fa fa-arrow-right" aria-hidden="true"></i>
+      </button>
+   </div>
+</div>
 
-    <a class="btn"  routerLink="/">home page</a>
+
+      </div>
+       
+      </div>
+     
+    <div class="sec- list col-3  overflow-auto ">
+      <div class="row newtask" *ngFor="let seclist of secList; let i=index ">
+        <div class="col-12">
+            {{seclist}}
+        </div>
+      <div class="row footer-card">
+         <div class="col-4 d-grid">
+            <button class="btn" (click)="removedateseclist(seclist,i)">
+               <i class="fa fa-trash-o" aria-hidden="true"></i>
+            </button>
+         </div>
+            <div class="col-4 d-grid">
+               <button class="btn " (click)="secbackdata(seclist,i)">
+                  <i class="fa fa-arrow-left" aria-hidden="true"></i>
+               </button>
+            </div>
+            <div class="col-4 d-grid">
+               <button class="btn" (click)="secnextdata(seclist,i)">
+               <i class="fa fa-arrow-right" aria-hidden="true"></i>
+               </button>
+            </div>
+      </div>
+      </div>
+    </div>
+    <div class="last- list col-3  overflow-auto ">
+      <div class="row newtask" *ngFor="let lastlist of lastList; let i=index">
+      <div class="col-12">
+         {{lastlist}}
+      </div>
+      <div class="row footer-card">
+            <div class="col-5 d-grid">
+               <button class="btn " (click)="lastbackdata(lastlist,i)">
+                  <i class="fa fa-arrow-left" aria-hidden="true"></i>
+               </button>
+            </div>
+            <div class="col-2"></div>
+            <div class="col-5 d-grid">
+               <button class="btn" (click)="removedatatske(lastlist,i)">
+                  <i class="fa fa-times" aria-hidden="true"></i>
+               </button>
+            </div>
+      </div>
+        
+      </div>
+    </div>
+ </div>
+ 
+ <div class="homepage "> 
+
+    <a class="home-page" routerLink="/home">home page</a>
  </div>
 
 </div>

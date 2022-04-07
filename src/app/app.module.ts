@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { ReactiveFormsModule } from '@angular/forms';
+
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -16,9 +16,10 @@ import { HomeModule } from './module/home/home.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule,
+
     HomeModule,
-    CoreModule
+    CoreModule,
+   
  
   ],
   providers: [],

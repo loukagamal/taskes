@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class DataService {
   public firstList: any[] =[];
-  public secList: any;
-  public lastList: any;
+  public secList: any[] =[];
+  public lastList: any[] =[];
   constructor() {}
 }

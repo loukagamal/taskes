@@ -1,16 +1,67 @@
-.firslist{
-    background-color: aqua;
+.addtext{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
+
+.card{
+    background-color: aquamarine;
+    border: solid 2px saddlebrown;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    
+}
+.Back{
+    display: block;
+}
+.newtask{
+
+    border: solid 2px saddlebrown;
+    margin-top: 1rem;
+}
+.Columns-list{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-card{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: beige;
+    box-shadow: 100px;
+    border: solid 2px bisque;
+ 
+}
+
+
+
 .list{
-    height: 200px;
-    border: solid 2px black;
-    margin: 2rem;
+
+   height :200px
+   
 }
-.btn{
-    height: 20px;
-    width: 30px;
+.homepage{
+    margin-top: 2rem;
+       margin-bottom: 2rem;
+ display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.home-page{
+    height: 30px;
+    width: 50x;
     background-color: blue;
     text-decoration: none;
     border: solid 2px sienna;
-
+   
 }

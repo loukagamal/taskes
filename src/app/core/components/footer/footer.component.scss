@@ -1,14 +1,15 @@
-.container{
+.container-fluid{
     width: 100%;
     display: flex;
     justify-content: space-between;
+      background-color: aquamarine;
 }
 .left-section{
-     background-color: aliceblue;
+     
      height: 100%;
   
 }
 .right-section{
-  background-color: bisque;
+  
      height: 100%;
 }
